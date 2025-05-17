@@ -59,3 +59,12 @@ The voice assistant operates through a series of concurrent threads and models:
 * Python 3.8+
 * A microphone
 * Local storage for the TinyLlama model and temporary audio files.
+
+## Configuration
+```python
+# Path to a Hugging Face compatible TinyLlama model directory (full-precision)
+MODEL_PATH = "C:/Users/Lenovo/tinyllama" 
+WHISPER_MODEL = "tiny"      # Whisper model size: tiny, base, small, medium, large (or tiny.en, base.en, etc. for English-only)
+CHUNK_DURATION = 1.0        # seconds per record chunk
+RATE = 16000                # Audio sample rate
+HOTKEY = "space"            # Keyboard hotkey to interrupt TTS playback
